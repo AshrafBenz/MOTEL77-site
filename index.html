@@ -397,7 +397,15 @@ h3 { font-family: 'Pacifico', cursive; font-size: 22px; color: var(--navy); marg
 .platform-btn.google { background: white; color: #2a2218; border-color: #e8e0d8; }
 .platform-btn.google:hover { border-color: var(--teal); }
 .platform-icon { font-size: 20px; }
-.platform-note { font-size: 12px; color: var(--muted); margin-top: 20px; }
+.platform-note {
+  background: #fff8e1;
+  color: #92400e;
+  padding: 14px 20px;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid #fde68a;
+}
 
 /* =============================================
    REVIEWS
@@ -783,6 +791,14 @@ footer { background: var(--navy); color: white; }
   .gallery-item, .gallery-item.big { height: 220px; }
   .form-row { grid-template-columns: 1fr; }
   .platforms-section { padding: 50px 22px; }
+  .platform-note {
+  background: #f1f5f9;
+  color: #0f172a;
+  padding: 12px;
+  border-left: 4px solid #0ea5a4;
+  margin: 20px 0;
+  border-radius: 8px;
+}
   .guarantee-strip { padding: 40px 22px; }
   .cta-banner { padding: 60px 22px; }
   .cta-banner::before, .cta-banner::after { display: none; }
@@ -1061,7 +1077,7 @@ footer { background: var(--navy); color: white; }
             <label>Full Name *</label>
             <input type="text" placeholder="Your full name" required>
           </div>
-           <div class="form-group">
+          <div class="form-group">
             <label>Email Address *</label>
             <input type="email" placeholder="2kPdG@example.com" required>
           </div>
@@ -1107,7 +1123,7 @@ footer { background: var(--navy); color: white; }
 
 <!-- =============================================
      PLATFORMS / OTA
-============================================= -->
+============================================= 
 <section class="platforms-section fade-in">
   <p>Also available on your favorite booking platforms</p>
   <div class="platforms-grid">
@@ -1123,8 +1139,12 @@ footer { background: var(--navy); color: white; }
     <a href="https://www.google.com/maps/place/Motel+77/@25.7659131,-80.2454419,592m/data=!3m1!1e3!4m22!1m12!3m11!1s0x88d9b708a6c1c9f9:0xe36f616ef39d0c8b!2sMotel+77!5m2!4m1!1i2!8m2!3d25.7654494!4d-80.2435107!9m1!1b1!16s%2Fg%2F1tf612dm!3m8!1s0x88d9b708a6c1c9f9:0xe36f616ef39d0c8b!5m2!4m1!1i2!8m2!3d25.7654494!4d-80.2435107!16s%2Fg%2F1tf612dm?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="platform-btn google">
       <span class="platform-icon">🗺️</span> Google Maps
     </a>
-  </div>
-  <p class="platform-note">💡 Tip: Book directly with us for the best rate — no platform markup, no extra fees.</p>
+  </div>-->
+  <section class="platform-note">
+  <p>
+💡 <strong>Tip:</strong> Book directly with us for the best rate — no extra fees.
+<a href="#contact" style="margin-left:10px;color:#0ea5a4;font-weight:bold;">Contact us →</a>
+</p>
 </section>
 
 <!-- =============================================
@@ -1488,12 +1508,11 @@ footer { background: var(--navy); color: white; }
       <a href="https://www.google.com/maps/place/Motel+77/@25.7659131,-80.2454419,592m/data=!3m1!1e3!4m22!1m12!3m11!1s0x88d9b708a6c1c9f9:0xe36f616ef39d0c8b!2sMotel+77!5m2!4m1!1i2!8m2!3d25.7654494!4d-80.2435107!9m1!1b1!16s%2Fg%2F1tf612dm!3m8!1s0x88d9b708a6c1c9f9:0xe36f616ef39d0c8b!5m2!4m1!1i2!8m2!3d25.7654494!4d-80.2435107!16s%2Fg%2F1tf612dm?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a>
     </div>
     <div class="open-badge">● Open 24 Hours</div>
-      <p style="text-align:center;font-size:11px;opacity:0.6;">
+     <p style="text-align:center;font-size:11px;opacity:0.6;">
   Designed & Developed by Achraf Benzha
 </p>
   </div>
 </footer>
-
 
 <!-- =============================================
      SCRIPTS
